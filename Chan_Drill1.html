@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3Q Drill 1</title>
+  
+  <style>
+    body{
+      display: flex;
+      justify-content: center;   
+      align-items: center;      
+      height: 100vh;
+      margin: 0;
+      font-family: 'Gill Sans';
+      background-color: pink;
+	  font-size: 20px;
+    }
+
+    .box{
+      width: 500px;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;      
+      text-align: center;
+    }
+
+    #calculator div{
+      margin: 15px 0
+    }
+
+	h1{
+		color: darkmagenta;
+	}
+	</style>
+</head>
+<body>
+	
+	<div class="box" id="output">
+
+    <h1>Basic Calculator Display</h1>
+
+    <div id="calculator"></div>
+  </div>
+
+
+	<script>
+
+		let num1 = 10;
+		let num2 = 20;
+
+		let addition = num1 + num2;
+		let subtraction = num1 - num2;
+		let multiplication = num1 * num2;
+		let division = num1 / num2;
+
+		document.getElementById("calculator").innerHTML =
+        
+        "<div class='add'>" +
+            "<h2>Addition</h2>" +
+            num1 + " + " + num2 + " = " + addition +
+        "</div>" +
+
+        "<div class='sub'>" +
+            "<h2>Subtraction</h2>" +
+            num1 + " - " + num2 + " = " + subtraction +
+        "</div>" +
+
+        "<div class='sub'>" +
+            "<h2>Multiplication</h2>" +
+            num1 + " * " + num2 + " = " + multiplication +
+        "</div>" +
+
+        "<div class='sub'>" +
+            "<h2>Division</h2>" +
+            num1 + " / " + num2 + " = " + division +
+        "</div>";
+    </script>
+
+	</script>
+</div>
+
+</body>
+</html>
